@@ -57,6 +57,6 @@ let desconto = Number(prompt("Digite a porcentagem de desconto: "))
 if (valor < 100) {
     alert(`Sem desconto! Ficando R$${valor}`)
 } else if (valor >= 100) {
-    let valor_total = valor * (1 - desconto * 100%)  //arrumar
+    let valor_total = valor * (100 - desconto) / 100
     alert(`Sua compra tem ${desconto}% de desconto! Ficando R$${valor_total}`)
 }
